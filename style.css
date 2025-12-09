@@ -1,0 +1,100 @@
+/* style.css */
+
+/* General Reset */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* --- NAVIGATION BAR (Requirement: Float for layout) [cite: 14, 20] --- */
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    overflow: hidden; /* Clears floats */
+}
+
+.logo {
+    float: left; /* Floating the logo to the left */
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    float: right; /* Floating the menu to the right */
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #ff9800;
+}
+
+/* --- MAIN CONTAINER --- */
+.container {
+    width: 80%;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* --- SKILLS SECTION (Requirement: Flexbox for layout) [cite: 15, 38] --- */
+.skills-container {
+    display: flex; /* activates Flexbox */
+    justify-content: space-around; /* Distributes space evenly */
+    flex-wrap: wrap; /* Allows cards to wrap on smaller screens */
+    gap: 20px;
+}
+
+.card {
+    background-color: #e3f2fd;
+    border: 2px solid #2196F3; /* Requirement: Border [cite: 37] */
+    padding: 20px;
+    width: 250px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* --- FORMS (Requirement: Contact Page) [cite: 39] --- */
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #2196F3;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0b7dda;
+}
+
+/* Image styling for About Page */
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #333;
+}
